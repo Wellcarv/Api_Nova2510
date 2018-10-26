@@ -5,7 +5,12 @@ Before '@Startup' do
 
     body = {
         "nome": @nome,
-        "cidade": @cidade,      
+        "cidade": @cidade,    
+        "cpf": "String",
+		"vl_emprestimo": "String",
+		"nr_parcelas": "String",
+		"vl_parcelas": "String"
+
     }
     @body =JSON.generate(body)
 

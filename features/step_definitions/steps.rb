@@ -7,7 +7,7 @@ Dado("possue um token válido para se comunicar com o serviço") do
 end
   
 Quando("envio todos os dados para o serviço de criação de empréstimo") do
-    $response = @Startup.postStartup
+    $response = @startup.postStartup
 end
   
 Então("o serviço deve criar o empréstimo com sucesso respondendo o código {int}") do |int|
@@ -28,12 +28,18 @@ Então("o serviço deve me retornar as informações do empréstimo criado respo
     expect($response.code).to eq(201)
     puts "Response code: #{$response.code}"
     expect($response.menssage).to eq("Created")
-    puts "Response Message: #{$response.message}""
+    puts "Response Message: #{$response.message}"
 
-    puts "ID:     #{$response["id"]}"
-    puts "Data:   #{$response["data"]}"
-    puts "Nome:   #{$response["nome"]}"
-    puts "Conta:  #{$response["conta"]}"
-    puts "Token:  #{$response["token"]}"
+
+      ##imprime os dados
+    puts "ID:            #{$response["id"]}"
+    puts "Data:          #{$response["data"]}"
+    puts "Nome:          #{$response["nome"]}"
+    puts "Conta:         #{$response["conta"]}"
+    puts "Token:         #{$response["token"]}"
+    puts "cpf:           #{$response["cpf"]}"
+    puts "vl_emprestimo: #{$response["vl_emprestimo"]}"
+    puts "nr_parcelas:   #{$response["nr_parcelas"]}"
+    puts "vl_parcelas:   #{$response["vl_parcelas"]}"
 
 end
