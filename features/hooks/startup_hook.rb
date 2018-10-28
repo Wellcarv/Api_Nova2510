@@ -1,18 +1,14 @@
 Before '@Startup' do
 
-    @nome = Faker::Company.name
-    @cidade = Faker::Address.City
+    
+    @nome = Faker::FunnyName.two_word_name
+    @cpf = Faker::CPF.numeric
+    @vl_emprestimo = Faker::Number.decimal(2, 3)
+    @nr_parcelas = Faker::Number.between(6, 36)
+    @vl_parcelas = Faker::Number.decimal(1, 3) #=> "1.843"
+    @id = Faker::Number.number(4)
 
-    body = {
-        "nome": @nome,
-        "cidade": @cidade,    
-        "cpf": "String",
-		"vl_emprestimo": "String",
-		"nr_parcelas": "String",
-		"vl_parcelas": "String"
+    # @geru = JSON.generate(@body)
 
-    }
-    @body =JSON.generate(body)
-
-    @Startup =Startup.new(@body)
+    # @geru =Startup.new(@body)
 end
