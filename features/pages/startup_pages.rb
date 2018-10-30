@@ -2,39 +2,28 @@ class Startup
 
     include HTTParty
     require_relative '../hooks/startup_hook'
+    base_uri "https://apigeru.free.beeceptor.com"
     
-    def initialize(body)
-        @options = {:body => @body}
-        @options2 ={}
+    def initialize(emprestimo, user)
+        @options = {:headers => @headers, :body => emprestimo}
+        @options2 = {:headers => @headers2, :body => user}
+        @options3 = {}
+    end
+
+    def postUser
+        self.class.post("/user", @options2)
     end
 
     def postCadastro
-        self.class.post("/emprestimo", @options)
+        self.class.post("/emprestimo", @options2)
     end
 
-    def getStartup (id)
-        self.class.get("/startup/#{id}", @options2)
+    def getEmprestimo (id)
+        self.class.get("/emprestimo/id/#{id}", @options3)
     end
 
-    def putStartup (id)
-        self.class.put("/startup/#{id}", @options)
+    def getUser
+        self.class.get("/user", @options2)
     end
 
-    def deleteStartup (id)
-        self.class.delete("/startup/#{id}", @options2)
-    end
-
-
-    # @Token = {
-        
-    # }
-
-    # @body = {
-    #     "id": @id,
-    #     "nome": @nome,
-    #     "cpf": @cpf,
-	# 	"vl_emprestimo": @vl_emprestimo,
-	# 	"nr_parcelas": @nr_parcelas,
-	# 	"vl_parcelas": @vl_parcelas
-    # }
 end

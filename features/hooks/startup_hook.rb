@@ -7,8 +7,24 @@ Before '@Startup' do
     @nr_parcelas = Faker::Number.between(6, 36)
     @vl_parcelas = Faker::Number.decimal(1, 3) #=> "1.843"
     @id = Faker::Number.number(4)
+    @token = Faker::Number.hexadecimal(32)
 
-    # @geru = JSON.generate(@body)
+    emprestimo = {
+       "id": @id,
+       "nome": @nome,
+       "cpf": @cpf,
+		"vl_emprestimo": @vl_emprestimo,
+		"nr_parcelas": @nr_parcelas,
+		"vl_parcelas": @vl_parcelas
+    }
 
-    # @geru =Startup.new(@body)
+    user = {
+        "nome": @nome,
+        "password": "testeG3ru"
+    }
+
+    @user = JSON.generate(user)
+    @emprestimo = JSON.generate(emprestimo)
+
+    @startup = Startup.new(@emprestimo, @user)
 end
