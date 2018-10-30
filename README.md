@@ -25,7 +25,6 @@ Após realizar o git clone no terminal, conferir se a pasta foi clonada corretam
 
 Para criação deste projeto, foi necessario incluir cenários para validação de toke:
 
-# Makdown
 - Gerar Toke de usuário
 	- Teste inicial para criação de usuário com retorno de Token
 	
