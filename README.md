@@ -23,7 +23,7 @@ Após realizar o git clone no terminal, conferir se a pasta foi clonada corretam
 - Bundler intall
 	- Espere carregar atulização da gem	
 - Executar o comando > CUCUMBER
-	- Executando cenários
+	- Teste em execução
 
 ### Cenários
 
