@@ -19,7 +19,11 @@ gem  'rspec'
 
 ## Execução dos testes
 
-Após realizar o git clone no terminal, conferir se a pasta foi clonada corretamente, em seguinda executar o comando Bundler intall, depois o comando CUCUMBER
+Após realizar o git clone no terminal, conferir se a pasta foi clonada corretamente, em seguinda execute os comandos:
+- Bundler intall
+	- Espere carregar atulização da gem	
+- Executar o comando > CUCUMBER
+	- Executando cenários
 
 ### Cenários
 
