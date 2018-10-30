@@ -15,7 +15,7 @@ Realizar automação de api para criação de empréstimo com validação de tok
 ## Começando
  
  Realizar o git clone no terminal para visualização do projeto.
- Caminho do [github](https://github.com/Wellcarv/desafio_geru.git)
+ Caminho do [github]https://github.com/Wellcarv/desafio_geru.git
  
  ```ruby
  Pré-requisitos instalado
