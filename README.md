@@ -27,8 +27,13 @@ Para criação deste projeto, foi necessario incluir cenários para validação 
 
 # Makdown
 - Gerar Toke de usuário
+	- Teste inicial para criação de usuário com retorno de Token
+	
 - Criar empréstimo
+	- Envio de dados para confirmação de emprestimo gerando token do usuário
+	
 - Consultar empréstimo
+	- Realizar consulta do emprestimo adquirido, validando ID
 
 ```ruby
 	Obs: para realizar estes teste criei metodos Faker para:
@@ -41,18 +46,9 @@ Para criação deste projeto, foi necessario incluir cenários para validação 
 	- token
 ```
 
-- Gerar Toke de usuário
-	Teste inicial para criação de usuário com retorno de Token
-	
-- Criar empréstimo
-	Envio de dados para confirmação de emprestimo gerando token do usuário
-	
-- Consultar empréstimo
-	Realizar consulta do emprestimo adquirido, validando ID
-
-	```ruby
-	Por ser um Teste de api, não consegui fazer com que todos os dados de retorno estegem corretamento certos com os dados gerandos.
-	```
+```ruby
+	Por ser um Teste de api, não consegui fazer com que todos os dados de retorno estejam corretamento certos com os dados gerandos.
+```
 
 
 ## Agradecimentos
@@ -61,6 +57,6 @@ Bom não vou falar que foi fácil por que não foi, não é simples como seguir 
 
 Fico muito feliz em poder entregar uma automação de testes baseando se em criar uma API com geração de token.
 
-Mesmo nunca tendo feito uma automação de API, espero ter chego o mais próximo do desejado no desafio.
+Mesmo nunca tendo feito uma automação de API, espero ter chego o mais próximo do resultado do desafio.
 
 Obrigado pela oportunidade!
