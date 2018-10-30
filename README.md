@@ -1,4 +1,4 @@
-# Automação de teste desafio GERU
+# Automação de Teste desafio GERU
 
 Realizar automação de api para criação de empréstimo com validação de token
 
