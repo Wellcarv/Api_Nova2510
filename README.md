@@ -44,9 +44,3 @@ Para criação deste projeto, foi necessario incluir cenários para validação 
 	- id
 	- token
 ```
-
-```ruby
-	Por ser um Teste de api, não consegui fazer com que todos os dados de retorno estejam corretamento certos com os dados gerandos.
-```
-
-
