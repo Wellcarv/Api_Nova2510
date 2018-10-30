@@ -1,5 +1,13 @@
 # Automação de teste desafio GERU
 
-Bom, eu vou descorrer o assunto de uma forma bem simples.
+```ruby
+Experiência
+Bom não vou falar que foi fácil por que não foi, não é simples como seguir uma receita de bolo rss.
 
-Antes de mais nada vamos a configuração do ambiente:
+Fico muito feliz em poder entregar uma automação de testes baseando se em criar uma API com geração de token.
+
+Mesmo nunca tendo feito uma automação de API, espero ter chego o mais próximo do esperado do desafio.
+```
+
+
+
