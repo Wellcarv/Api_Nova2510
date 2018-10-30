@@ -19,13 +19,13 @@ gem  'rspec'
 
 ## Execução dos testes
 
-Após realizar o git clone no terminal, conferir se a pasta foi clonada corretamente, em seguinda executar o comando CUCUMBER
+Após realizar o git clone no terminal, conferir se a pasta foi clonada corretamente, em seguinda executar o comando Bundler intall, depois o comando CUCUMBER
 
 ### Cenários
 
 Para criação deste projeto, foi necessario incluir cenários para validação de toke:
 
-- Gerar Toke de usuário
+- Gerar Token de usuário
 	- Teste inicial para criação de usuário com retorno de Token
 	
 - Criar empréstimo
@@ -50,12 +50,3 @@ Para criação deste projeto, foi necessario incluir cenários para validação 
 ```
 
 
-## Agradecimentos
-
-Bom não vou falar que foi fácil por que não foi, não é simples como seguir uma receita de bolo rss.
-
-Fico muito feliz em poder entregar uma automação de testes baseando se em criar uma API com geração de token.
-
-Mesmo nunca tendo feito uma automação de API, espero ter chego o mais próximo do resultado do desafio.
-
-Obrigado pela oportunidade!
